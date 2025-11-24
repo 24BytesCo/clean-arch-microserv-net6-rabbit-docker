@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace MicroRabbit.Domain.Core.Events
 {
+    /// <summary>
+    /// Abstracción base de mensaje utilizado por MediatR y el bus.
+    /// </summary>
     public abstract class Message : IRequest<bool>
     {
         public string MesageType { get; protected set; }
